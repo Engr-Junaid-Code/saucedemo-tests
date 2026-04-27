@@ -107,6 +107,7 @@ saucedemo-tests/
 │   ├── benutzer.py                 # Benutzer-Credentials
 │
 ├── pytest.ini                      # 📋 Pytest Einstellungen
+├── Regression_Testsuite.xlsx       # 📋 Testfallsequenzen
 ├── README.md                       # 📖 Diese Datei
 ├── requirements.txt                # 📦 Python-Abhängigkeiten
 ├── testlauf.py                     # 📋 Main Test Datei
