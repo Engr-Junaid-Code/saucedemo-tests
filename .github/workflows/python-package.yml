@@ -31,7 +31,7 @@ jobs:
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Check requirements file
-      run: ls -l requirements.txt
+      run: ls -l Requirements.txt
     - name: Test installed packages
       run: python -c "import numpy; charset-normalizer; print('Imports OK')"
     - name: Lint with flake8
