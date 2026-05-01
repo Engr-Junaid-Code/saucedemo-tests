@@ -24,6 +24,8 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
+    - name: Test installed packages
+      run: python -c "import certifi; charset-normalizer; print('Imports OK')"
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
