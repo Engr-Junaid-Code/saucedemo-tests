@@ -1,3 +1,1 @@
-seiten/
-  __init__.py
-  anmelde_seite.py
+saucedemo-tests/seiten/__init__.py
