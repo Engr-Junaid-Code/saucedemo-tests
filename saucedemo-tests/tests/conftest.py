@@ -2,6 +2,9 @@
 # conftest.py — Fixtures & Hooks für alle Tests
 # ============================================================
 
+import sys, os
+# seiten/ and testdaten/ live one level up from tests/
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 import pytest
 import logging
 from datetime import datetime
