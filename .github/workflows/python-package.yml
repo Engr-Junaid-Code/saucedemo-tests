@@ -35,7 +35,7 @@ jobs:
     - name: Check requirements file
       run: ls -l Requirements.txt
     - name: Test installed packages
-      run: python -c "import numpy; import numpy; print('Imports OK')"
+      run: python -c "import certifi; import charset-normalizer; print('Imports OK')"
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
