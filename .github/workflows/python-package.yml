@@ -24,13 +24,16 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Test installed packages
-      run: python -c "import certifi; charset-normalizer; print('Imports OK')"
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Check requirements file
+      run: ls -l requirements.txt
+    - name: Test installed packages
+      run: python -c "import numpy; charset-normalizer; print('Imports OK')"
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
