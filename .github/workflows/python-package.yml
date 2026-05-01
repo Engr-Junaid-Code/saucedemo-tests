@@ -37,7 +37,7 @@ jobs:
     - name: Check requirements file
       run: ls -l Requirements.txt
     - name: Test installed packages
-      run: python -c "import pygments; import pyflakes; print('Imports OK')"
+      run: python -c "import pytest; import pyflakes; print('Imports OK')"
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
