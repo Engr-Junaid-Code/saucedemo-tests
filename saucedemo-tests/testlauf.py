@@ -113,7 +113,7 @@ def testgruppe_menu():
     print(f"  {GELB}k{RESET}  →  💳 Kasse")
     print(f"  {GELB}n{RESET}  →  🧭 Navigation")
     print(f"  {GELB}s{RESET}  →  🔄 Sitzung")
-    print(f"  {GELB}v{RESET}  →  🎨 Visuell")
+    print(f"  {GELB}v{RESET}  →  🎨 Visuell-UI")
     print()
     gruppe_map = {
         "r": None,
@@ -123,7 +123,7 @@ def testgruppe_menu():
         "k": "Kasse",
         "n": "Navigation",
         "s": "Sitzung",
-        "v": "Visuell-UI",
+        "v": "Visuell",
     }
     auswahl = eingabe_holen(
         "Deine Wahl [r/a/p/w/k/n/s/v]:",
